@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/movies" method="POST">
+        <label for="title">Title</label>
+            <input type="text" name="title" value="<%= locals.title %>>
+        <label for="year">Year</label>
+            <input type="text" name="year" value="<%= locals.year %>">
+        <label for="">Genre</label>
+            <select name="genre" id="genre">
+                <option value="Action">Action</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Romance">Romance</option>
+                <option value="Comedy">Comedy</option>
+            </select>
+        <label for="">Poster</label>
+            <input type="text" name="poster" value="<%= locals.poster %>">
+        <input type="submit">Submit</button>
+    </form>
+</body>
+</html>
